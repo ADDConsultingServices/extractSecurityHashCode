@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="X0RmRudCo0iAqYKnmzxFGw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvElementArea="344, 552, 606, 46" CvType="InputBox" DesignTimeRectangle="344, 553, 606, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ' aaname='Email:' /&gt;" Guid="ae70d5b1-bdd2-4989-9572-c4ff81b0c416" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="341, 525, 55, 17" CvTextArgument="Email:" CvType="Text" DesignTimeRectangle="344, 553, 606, 43" ElementType="Text" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' aaname='Email*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' aaname='Email*' type='email' class='form-control ' /&gt;" ImageBase64="" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e81fd44d6533b933f186ee587ee3cad2.png" xmlns="">0o3Irv8kgAkS3C7uMZ6SLxw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

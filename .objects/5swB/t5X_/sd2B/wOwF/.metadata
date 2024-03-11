@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Register",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "wOwF6FX3D0C5TH7HdHH7Lw",
+  "Reference": "DeOaXC0UuE2ksKu5NdDoBw/wOwF6FX3D0C5TH7HdHH7Lw",
+  "ParentRef": "DeOaXC0UuE2ksKu5NdDoBw/sd2BnW9lGE2zCucrQhNeyA",
+  "Created": "2024-03-11T06:16:24.3199869Z",
+  "Updated": "2024-03-11T06:16:24.3199869Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

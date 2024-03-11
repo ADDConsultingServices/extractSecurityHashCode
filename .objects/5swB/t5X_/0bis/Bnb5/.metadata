@@ -1,0 +1,15 @@
+﻿{
+  "Name": "extractWI",
+  "Description": "extractWI",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "Bnb5IVOJhUmArCi-U0HQSg",
+  "Reference": "DeOaXC0UuE2ksKu5NdDoBw/Bnb5IVOJhUmArCi-U0HQSg",
+  "ParentRef": "DeOaXC0UuE2ksKu5NdDoBw/0bisoY12a02FBC_kPtoTrg",
+  "Created": "2024-03-11T06:48:12.4202977Z",
+  "Updated": "2024-03-11T06:48:12.4202977Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

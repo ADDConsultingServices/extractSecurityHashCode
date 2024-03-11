@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4QPt8U3zp0iX6Gc3IwdE2Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvElementArea="640, 756, 102, 47" CvTextArea="656, 770, 68, 21" CvTextArgument="Register" CvType="Button" DesignTimeRectangle="643, 759, 97, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='                                 Register                       *' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                 Register                       *' tag='A' type='' class='btn bg-warning' check:text='Register' /&gt;" Guid="58112e15-dd52-4146-8c73-54e84f1fd1ec" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="43faccd793f11d8ca03dca0536f1d209.png" xmlns="">0QenhJA9E1Eu7_OIT1O8UuA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

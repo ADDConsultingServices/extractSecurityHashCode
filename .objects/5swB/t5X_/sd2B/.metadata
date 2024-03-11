@@ -1,0 +1,16 @@
+﻿{
+  "Name": "acmeLoginPage",
+  "Description": "acmeLoginPage",
+  "Type": "Screen",
+  "Id": "sd2BnW9lGE2zCucrQhNeyA",
+  "Reference": "DeOaXC0UuE2ksKu5NdDoBw/sd2BnW9lGE2zCucrQhNeyA",
+  "ParentRef": "DeOaXC0UuE2ksKu5NdDoBw/t5X_27XXQk2_2vmDBTIgPg",
+  "Created": "2024-03-11T06:11:11.7823599Z",
+  "Updated": "2024-03-11T06:11:44.8366956Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

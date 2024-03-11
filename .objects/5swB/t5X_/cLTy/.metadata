@@ -1,0 +1,16 @@
+﻿{
+  "Name": "landingPage",
+  "Description": "landingPage",
+  "Type": "Screen",
+  "Id": "cLTysYaCHEGgKXwMbV4QXQ",
+  "Reference": "DeOaXC0UuE2ksKu5NdDoBw/cLTysYaCHEGgKXwMbV4QXQ",
+  "ParentRef": "DeOaXC0UuE2ksKu5NdDoBw/t5X_27XXQk2_2vmDBTIgPg",
+  "Created": "2024-03-11T06:26:10.6170466Z",
+  "Updated": "2024-03-11T06:26:15.3797559Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
