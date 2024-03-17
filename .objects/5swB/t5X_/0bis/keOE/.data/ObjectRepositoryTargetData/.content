@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LsMi7Q9WG0CjFTy7ZN5Ltg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://acme-test.uipath.com/work-items/98880795" CvTextArea="256, 300, 620, 38" CvType="AnyWordGroup" DesignTimeRectangle="257, 295, 1425, 61" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl class='page-header' visibleinnertext='Work Items - Work Item Details' /&gt;" FuzzySelectorArgument="&lt;webctrl class='page-header' visibleinnertext='Work Items - Work Item Details' tag='H1' type='' /&gt;" Guid="ad8b3d8a-14b5-4e04-8886-71241a6c8702" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

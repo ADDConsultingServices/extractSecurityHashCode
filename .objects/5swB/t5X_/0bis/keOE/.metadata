@@ -1,0 +1,14 @@
+﻿{
+  "Name": "workitemDetails",
+  "Description": "workitemDetails",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "keOEWR6PfUirJCWcQVANfQ",
+  "Reference": "DeOaXC0UuE2ksKu5NdDoBw/keOEWR6PfUirJCWcQVANfQ",
+  "ParentRef": "DeOaXC0UuE2ksKu5NdDoBw/0bisoY12a02FBC_kPtoTrg",
+  "Created": "2024-03-17T14:13:27.4046248Z",
+  "Updated": "2024-03-17T14:13:27.4046248Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

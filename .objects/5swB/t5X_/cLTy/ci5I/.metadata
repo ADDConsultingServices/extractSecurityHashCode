@@ -1,0 +1,14 @@
+﻿{
+  "Name": "acmeHome",
+  "Description": "acmeHome",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ci5IBdqcTU2CCe8ms4-ExQ",
+  "Reference": "DeOaXC0UuE2ksKu5NdDoBw/ci5IBdqcTU2CCe8ms4-ExQ",
+  "ParentRef": "DeOaXC0UuE2ksKu5NdDoBw/cLTysYaCHEGgKXwMbV4QXQ",
+  "Created": "2024-03-17T13:43:54.8489481Z",
+  "Updated": "2024-03-17T13:43:54.8489481Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

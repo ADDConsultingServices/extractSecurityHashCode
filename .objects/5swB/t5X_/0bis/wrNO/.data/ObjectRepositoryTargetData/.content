@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="R7c9bjXdXkGVyQAd9QSBEg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="9, 66, 49, 43" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Back' role='push button' aastate='focusable, has popup, opaque' text='Back' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Back' role='push button' aastate='focusable, has popup, opaque' text='Back' automationid='' check:text='Back' /&gt;" Guid="f53d4332-91e7-4d8d-8c44-77e4ac27106b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADUAAAAvCAYAAABDq4KNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFxSURBVGhD7di9SgNBEMBxH8V8qBDwQdRwXkKiCfgWFhYW2voSaYIfhCCKCBJJIxg7FT9ioiGmMYWNiKLYOGa2uG2mOHF3ZGAO/izcDsv9muO4sdEFGOw2Adp9gMFQfBbVaJEDErOo00tyQGIWddEhByRmUfcDckBiFkVsSk1RUlKUlBQlJUVJSVFSYkd9jb4xN1bXzErtu4gV9dntQzm/AOOJNCwVS+SMi9hQCCqFRQNKpaegsVkj51zEgkJQPhuygDDvKG4Q5hX13u6xgzBvqLfbBwhnAwPC1pdX4GzvMFZ/fTN6QX0/PkFubj4C/bbn82vy3Lh5QWEHlSokkhPRgwYzWVgMC7F6ubojz4ybNxR2VN2BZGrSoApBDj46PD9LvaIwhOFLghPmHYU1t+usMBYUxgljQ2HHW7UIht+A1IyLWFHYSX0fMplps1L7LmJHYa83XfK+q/4F5TtFSUlRUlKUlBQlJUVJSVFSUpSMhvADp4oGOEz2VHkAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;wnd app='chrome.exe' title='ACME System 1 - Work Items*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="10efae7a2eb98254b67178118894b4cf.png" xmlns="">0om4ZsGZ-J0W8yiIxamPN6w</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

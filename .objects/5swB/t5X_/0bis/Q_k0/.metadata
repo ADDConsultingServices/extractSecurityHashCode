@@ -1,0 +1,14 @@
+﻿{
+  "Name": "pageNumbers",
+  "Description": "pageNumbers",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Q_k0qrg-rUWlYoODKtFVCg",
+  "Reference": "DeOaXC0UuE2ksKu5NdDoBw/Q_k0qrg-rUWlYoODKtFVCg",
+  "ParentRef": "DeOaXC0UuE2ksKu5NdDoBw/0bisoY12a02FBC_kPtoTrg",
+  "Created": "2024-03-17T14:48:00.8683145Z",
+  "Updated": "2024-03-17T14:48:00.8683145Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
