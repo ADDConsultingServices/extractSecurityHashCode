@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>799.2,4935.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>799.2,1084.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>fetchWorkItemDetails_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -112,9 +112,11 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="fetchWorkItemDetails" sap:VirtualizedContainerService.HintSize="774.4,4870.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="fetchWorkItemDetails" sap:VirtualizedContainerService.HintSize="592,1020" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="boolWorkItemDetailsHeader" />
       <Variable x:TypeArguments="x:Boolean" Name="boolWorkItemHeader" />
@@ -124,20 +126,20 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="workItems" sap:VirtualizedContainerService.HintSize="712,4781.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="06295ccf-ba73-4a38-9c3a-d279083b4b4f" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="workItems" sap:VirtualizedContainerService.HintSize="529.6,931.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="06295ccf-ba73-4a38-9c3a-d279083b4b4f" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="678.4,4541.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,691.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="616,184" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='&quot;+(in_CounterIndex+2).ToString+&quot;' tag='I' /&gt;&quot;]" />
-            <Assign sap:VirtualizedContainerService.HintSize="616,122.4" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,184" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='&quot;+(in_CounterIndex+2).ToString+&quot;' tag='I' /&gt;&quot;]" />
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="Assign_4">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[in_CounterIndex]</OutArgument>
               </Assign.To>
@@ -145,12 +147,29 @@
                 <InArgument x:TypeArguments="x:Int32">[in_CounterIndex+2]</InArgument>
               </Assign.Value>
             </Assign>
-            <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="616,197.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items" ContentHash="feovqQlKw06Iv6Z28PmEOg" CvElementArea="374, 706, 34, 31" CvType="Button" DesignTimeRectangle="377, 708, 30, 27" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="[&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='&quot;+in_CounterIndex.ToString+&quot;' tag='BUTTON' /&gt;&quot;]" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='button' tag='BUTTON' class='btn btn-default btn-xs' aaname='' /&gt;" Guid="92fc53df-70a0-42bf-ae72-3c2f845c86cb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHTSURBVFhH7Zexa8JAFIf7P2XKUMjk1i1LO1UcKh0EoS6VLo6FEhxKB7FQnLrFKQWhUOggIoQUCnFxKGQQRCXQISD+mqdnTGIbk2hsCv3ggb5LfN+9uwvxACnhX8SPR2QymUDXdXS73USDalAtN44IDaiqitFohNlsxrK7h36balAtt4wjQpZ0wb6gWlRziSNCLUuyE36oFtVc4hHZNzsTscYmrCn7EoOtRMyeAqmYAc9x4FgIp2U02kN2RXhiixjNEgSXgD/E61cMI3QolojZKjtd4HMS5HYfQ3tpjHcFjcsTZ0y8X52ETUQXmeqoHzGJogxjbdYWtKrIOpPF4wdLbyC6yNstm3EJypjl/LhkC81w+yWyyLBZWMz2zO4Gy31H52YhwlU1lgnm74qslqYAecByfvaxNNE2a8A+8hFdxMZSJYjzQrbMsf0Ae9LQHxjQX2RI5wKTsI/vnQYz5LMklghhtCqOzHrw4A8Xn/lcHfonuymA2CJzBh00rrLIsKIcJ0C8kKD0TOgPy+UJJ7OdSBBTEx1nr2yWSU6E8MjwqDybbGCdZEUIkqnlka9p9nn6meRFQpJ+kVS8s6bmLT41/2sIGiBLalmSQTXcEoRH5PcAvgDl5mmL6Phz4QAAAABJRU5ErkJggg==" Reference="DeOaXC0UuE2ksKu5NdDoBw/gTksZzShM0edOo5h_GGBiA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Visible" />
-              </uix:NClick.Target>
-            </uix:NClick>
-            <ui:RetryScope ContinueOnError="True" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="616,598.4" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="10" RetryInterval="00:00:05">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click--search window" sap:VirtualizedContainerService.HintSize="433.6,126.4" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e94536b4-1698-4b7a-af18-9e654c2d2568" Selector="[&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='&quot;+in_CounterIndex.ToString+&quot;' tag='BUTTON' /&gt;&quot;]">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:RetryScope ContinueOnError="True" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="10" RetryInterval="00:00:05">
               <ui:RetryScope.ActivityBody>
                 <ActivityAction>
                   <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,267.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
@@ -174,26 +193,26 @@
               </ui:RetryScope.Condition>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:RetryScope>
-            <If Condition="[boolWorkItemDetailsHeader]" sap:VirtualizedContainerService.HintSize="616,3351.2" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[boolWorkItemDetailsHeader]" sap:VirtualizedContainerService.HintSize="433.6,77.6" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="582.4,3085.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,192.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Fetching work item details (Get text)" sap:VirtualizedContainerService.HintSize="520,2999.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="Fetching work item details (Get text)" sap:VirtualizedContainerService.HintSize="449.6,106.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="clientID" />
                       <Variable x:TypeArguments="x:String" Name="clientDetails" />
@@ -202,7 +221,8 @@
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <uix:NGetText DelayAfter="2" DelayBefore="5" DisplayName="Get Text 'Client ID:'" sap:VirtualizedContainerService.HintSize="457.6,197.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="06295ccf-ba73-4a38-9c3a-d279083b4b4f" TextString="[clientDetails]" Version="V3">
@@ -249,7 +269,7 @@
                         <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/98880886" ContentHash="c6Dge9apUkOeeGuuIe_AYg" CvElementArea="241, 392, 1433, 48" CvType="InputBox" DesignTimeRectangle="330, 211, 88, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Work Items' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Work Items' tag='A' type='' class='' check:innerText='Work Items' /&gt;" Guid="058b0f3e-dbfc-4db2-b60e-77d811621367" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAYCAYAAAB3JpoiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATTSURBVGhD7ZfLSyNZFMbnf3KVlavZuXKVnStX7twIEkI3kkaCgiJNdGEPTRaiLpqIKEUoNaSjkwcaQycZ0grpLkSKpruQotbfnPuo1K3HmJjpCQ1Tiw+S+zznd+8959RvjuMg1uQUA5+wYuATVgx8woqBT1gC+NcGFpZPkSz0w4Nk39RyEfleoI/UKRSpT8fB13DfS2Ro+njrXFdo3imy10qb0cZ2/gaGOu4XkbzhfeRXCepm2Ejz4hxTqVMkyKkF7cHX5zgmTnI0b7WOjq/95fqZwKt5smm98SsDd9A81MjwEnRLHWBB3yXjc3XkGdjcLcxBH8nuIkvOzhx+VuaMp/8dcKdWJsM1bH9SBjCgdLvZzRZAAgfy6Qoz3Flbtj3B+LOKpazGX8RUSsNcroryg9tP4oAIbO0GS6/EmPnjfgTw76juFWkdDZnLR29+UD7gDzhYpzXZ3lLeq7RhdhrIjGLbX/c42C1iWo5b2O/CsGl+s4rFFbHu9GqZxn335v5gc3TMpmX/io6Mdg/Tlv1SHnDzFks+A0kcqIzdvTqS1O/BdW+lewg27ug/c2Z2q4pCrQ1dq2CeGZAiJ/pyngSUIEfSRy2Uz+o46dkB4N5ai0VjsF+kfMAt3LXaePeW9iQgzIZq3+LjDP2cA0y+FbaVz+hivImyTcMsQRXjWjh4zw6duOyUCKaO7TMxl4NPlVHmvsuDXjnHhkY+KfPmjr6ItaU84O6k3RYs2cYT4usrNPn/z9h+rYYPGb/dMPN4g0XaYOZ9dzCfy2whw3LAH23RLgElP9x7Y0gecIJdFHAWtCGwmXzAhUIhxWpzG+YCezo25a5s2Da/DzK/MdvcgyFZlyU+dqNJ/2Vhka0pr4VeqL5zit+3bnA3aPMBDwIWB5DId2W/LRxxE6QSblg/T66RlYyN5r6SHyIAMbnA39GrmKX++WP/zfhHjQJchsv0Md1OdrsV8dewXEFVXcsHTl7EtYYPnNNvYN7dVx5oYq0CvfcIKxBGVPmAO80KPQN2kvRbhpjMpXiSTOJU5bPnIcYD7A8vfvnCxbPAmfNCiYiKKVIjAA+uHZaOghG91gB4MAm7t5qPpVd5UUKSoPP1KFwmtyqUp748E8OZLHr+NIFBFnDPcWIq/cohGEVyIiVvBulnAU/uUYKivVn8W7owfWMiNTJwub9si9TYwKWeTHRqDWzkvOSZ2KSXoUD3A5dxObHXE2VicBO5+cxhV5SLSrwfHlIowbCNnwXuQnlAYZPdFDrAH/5xIY0A3I236muN1L8Frsq20DlmPvkrvwBw6fhaGZm16C9PHuc3S0hTAvXdwGFJc6clkutIwEkUI5lDofWCGgG4G2NZm3rbHNvgMKezMi+NCdxqXCH5isC21NhP7R/ZQQ8B7tbWoZpc7WcAQ0/0ZWXhUODsZfCPMY0qgWduZsR6Yl4RWSrhRFno2ZZ4U0L+Iyvt6sgwkLR+9lrW02MCd6weNliZSGVj5uiWJ+PCUQlzjFMgF4WBy+qDx+eobCu/LqM/5yM+fHbrqIY+LkYBTnIdWaHKKcoWpqj1+rfI8FJOhEfRTrV+TbGNNLtOHy+db968cYGz/2aPvsa92D2V1rC434bxpMwhhYHH+k8VA5+wYuATVgx8woqBT1gx8InKwd/0MljtMoxo/wAAAABJRU5ErkJggg==" InformativeScreenshot="d95738a56236aae333263a4ab7634db0.png" Reference="DeOaXC0UuE2ksKu5NdDoBw/xXTmy5DMHkOHqKtSHy5cEA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <ui:RetryScope ContinueOnError="True" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="457.6,678.4" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="10" RetryInterval="00:00:05">
+                    <ui:RetryScope ContinueOnError="True" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="457.6,598.4" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="10" RetryInterval="00:00:05">
                       <ui:RetryScope.ActivityBody>
                         <ActivityAction>
                           <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,267.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
@@ -278,7 +298,13 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:RetryScope>
-                    <If Condition="[boolWorkItemHeader]" sap:VirtualizedContainerService.HintSize="457.6,668.8" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If Condition="[boolWorkItemHeader]" sap:VirtualizedContainerService.HintSize="457.6,76" sap2010:WorkflowViewState.IdRef="If_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,253.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
                           <sap:WorkflowViewStateService.ViewState>
