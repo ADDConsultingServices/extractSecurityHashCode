@@ -120,11 +120,7 @@
   <Sequence DisplayName="creatingTableForWI" sap:VirtualizedContainerService.HintSize="688,1813.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Default="True" Name="workitemsPageBoolFlag" />
-      <Variable x:TypeArguments="x:Int32" Name="pageCounter">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="pageCounter" />
       <Variable x:TypeArguments="sd:DataTable" Name="finalExtractedDT" />
       <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
       <Variable x:TypeArguments="sd:DataTable" Name="workitemDetailsDT" />
@@ -249,12 +245,8 @@
                               <ui:LogMessage sap:VirtualizedContainerService.HintSize="353.6,184" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;work item id: &quot;+CurrentRow(&quot;WIID&quot;).ToString+&quot;:::&quot;+&quot;work item type: &quot;+CurrentRow(&quot;Type&quot;).ToString+&quot;:::&quot;+&quot;Counter index: &quot;+counterIndex.ToString]" />
                               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="fetchWorkItemDetails.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="353.6,136.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="fetchWorkItemDetails.xaml">
                                 <ui:InvokeWorkflowFile.Arguments>
-                                  <InArgument x:TypeArguments="x:Int32" x:Key="in_CounterIndex">
-                                    <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="counterIndex" />
-                                  </InArgument>
-                                  <InArgument x:TypeArguments="sd:DataTable" x:Key="in_workitemDetailsDT">
-                                    <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="workitemDetailsDT" />
-                                  </InArgument>
+                                  <InArgument x:TypeArguments="x:Int32" x:Key="in_CounterIndex">[counterIndex]</InArgument>
+                                  <InArgument x:TypeArguments="sd:DataTable" x:Key="in_workitemDetailsDT">[workitemDetailsDT]</InArgument>
                                 </ui:InvokeWorkflowFile.Arguments>
                               </ui:InvokeWorkflowFile>
                             </Sequence>
